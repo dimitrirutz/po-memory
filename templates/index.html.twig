@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('host') }}
+{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="memory-grid" id="memory">
+        </div>
+        <div class="leaderboard">
+            <h3>Score</h3>
+            <ol id="leaderboard-list">
+            </ol>
+            <ol class="waiting-list">
+
+            </ol>
+        </div>
+    </main>
+    <audio src="{{ asset('sounds/find_pair.mp3') }}"></audio>
+{% endblock %}
